@@ -1,0 +1,186 @@
+V "GNAT Lib v10"
+P SS ZX
+
+RN
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_RELATIVE_DELAY
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_TASK_ENTRIES=1
+
+U cuenta%b		cuenta.adb		34ab7cb8 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U cuenta%s		cuenta.ads		0b36b06c EE NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-calend.ads		20230707070819 474d9720 ada.calendar%s
+D a-caldel.ads		20230707070819 9f20b83d ada.calendar.delays%s
+D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
+D a-chlat1.ads		20230707070819 66457d31 ada.characters.latin_1%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20230707070818 0240fc73 ada.real_time%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-string.ads		20230707070819 90ac6797 ada.strings%s
+D a-strmap.ads		20230707070819 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20230707070819 1656705b ada.strings.unbounded%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D cuenta.ads		20250424182733 b394155a cuenta%s
+D cuenta.adb		20250425155830 3f9dccd4 cuenta%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 77e65b42 system%s
+D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
+D s-atocou.ads		20230707070819 b45c2d8d system.atomic_counters%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-conca4.ads		20230707070819 7e642b20 system.concat_4%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-imgrea.ads		20230707070819 c7a851e2 system.img_real%s
+D s-linux.ads		20230707070818 ed0b8aee system.linux%s
+D s-memory.ads		20230707070819 597d6634 system.memory%s
+D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20230708061938 fc2966ab system.os_constants%s
+D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stalib.adb		20230707070819 f2fe2716 system.standard_library%b
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
+D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
+D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
+D s-taprop.ads		20230707070818 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
+D s-taprob.ads		20230707070818 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20230707070819 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20230707070818 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20230707070818 cca55c94 system.tasking.stages%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [crear cuenta 14 13 none]
+G c Z s b [consultar_titular cuenta 18 13 none]
+G c Z s b [tarea_depositar cuenta 21 14 none]
+G c Z s b [realizar_deposito cuenta__tarea_depositar 22 13 none]
+G c Z s b [tarea_retirar cuenta 25 14 none]
+G c Z s b [realizar_retiro cuenta__tarea_retirar 26 13 none]
+G c Z s b [tarea_consultar_saldo cuenta 29 14 none]
+G c Z s b [consultar_saldo cuenta__tarea_consultar_saldo 30 13 none]
+G c Z s s [cuenta_bancariaDI cuenta 9 9 none]
+G c Z s s [cuenta_bancariaDA cuenta 9 9 none]
+G c Z s s [cuenta_bancariaDF cuenta 9 9 none]
+G c Z s s [cuenta_bancariaIP cuenta 9 9 none]
+G c Z s s [P3sIP cuenta 22 7 none]
+G c Z s s [tarea_depositarVIP cuenta 21 4 none]
+G c Z s s [P8sIP cuenta 26 7 none]
+G c Z s s [tarea_retirarVIP cuenta 25 4 none]
+G c Z s s [P12sIP cuenta 30 7 none]
+G c Z s s [tarea_consultar_saldoVIP cuenta 29 4 none]
+X 1 ada.ads
+16K9*Ada 20e8 17|2r6 3r5 4r6 4r23 18|2r6 3r5 4r6 4r23
+X 11 a-string.ads
+16K13*Strings 35e16 17|2r10 3r9 18|2r10 3r9
+X 13 a-strunb.ads
+82K21*Unbounded 756e26 17|2w18 3r17 18|2w18 3r17
+87R9*Unbounded_String<7|43R9> 739e14 17|10r17 14r29 18r59 18|11r29 66r59
+116V13*To_String{string} 18|57s43
+X 15 a-textio.ads
+57K13*Text_IO 727e16 17|4w10 4r27 18|4w10 4r27
+508U14*Put_Line 18|30s10 43s13 45s13 57s20
+X 17 cuenta.ads
+7K9*Cuenta 33l5 33e11 18|8b14 73l5 73t11
+9R9*Cuenta_Bancaria 12e14 14r69 18r35 22r43 26r41 30r37 18|11r69 12r11 27r44
+. 39r42 56r38 66r35
+10r7*Titular{13|87R9} 18|15m9 57r55 69r16
+11f7*Saldo{float} 18|16m9 29m12 29r23 41r15 42m15 42r26 57r87
+14V13*Crear{9R9} 14>19 14>47 18|11b13 18l8 18t13
+14r19 Titular{13|87R9} 18|11b19 15r20
+14f47 Saldo{float} 18|11b47 16r18
+18V13*Consultar_Titular{13|87R9} 18>31 18|66b13 70l8 70t25
+18r31 C{9R9} 18|66b31 69r14
+21T14*Tarea_Depositar 23l8 23e23 18|24b14 32l8 32t23
+22Y13 Realizar_Deposito 22=32 22>60 18|27b14 31l11 31t28
+22r32 C{9R9} 18|29m10 29r10 29r21
+22f60 Monto{float} 18|29r31 30r59
+25T14*Tarea_Retirar 27l8 27e21 18|36b14 49l8 49t21
+26Y13 Realizar_Retiro 26=30 26>58 18|39b14 47l11 47t26
+26r30 C{9R9} 18|41r13 42m13 42r13 42r24
+26f58 Monto{float} 18|41r24 42r34 43r59
+29T14*Tarea_Consultar_Saldo 31l8 31e29 18|53b14 60l8 60t29
+30Y13 Consultar_Saldo 30>30 18|56b14 58l11 58t26
+30r30 C{9R9} 18|57r53 57r85
+X 18 cuenta.adb
+12r7 C{17|9R9} 15m7 16m7 17r14
+27r33 C{17|9R9}
+27f61 Monto{float}
+39r31 C{17|9R9}
+39f59 Monto{float}
+56r31 C{17|9R9}
+X 22 system.ads
+67M9*Address
+X 34 s-memory.ads
+53V13*Alloc{22|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{22|67M9} 105i<c,__gnat_realloc>22
+X 42 s-stausa.ads
+208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
+273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+X 44 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

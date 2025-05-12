@@ -1,0 +1,168 @@
+V "GNAT Lib v10"
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U banco%b		banco.adb		bec3c2e0 NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W cuenta%s		cuenta.adb		cuenta.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+
+U banco%s		banco.ads		efe206f6 EE NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W cuenta%s		cuenta.adb		cuenta.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
+D a-chlat1.ads		20230707070819 66457d31 ada.characters.latin_1%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-string.ads		20230707070819 90ac6797 ada.strings%s
+D a-strmap.ads		20230707070819 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20230707070819 1656705b ada.strings.unbounded%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D banco.ads		20250423182410 9b23494f banco%s
+D banco.adb		20250423182755 5121c416 banco%b
+D cuenta.ads		20250423174714 62973fe2 cuenta%s
+D system.ads		20230707070819 77e65b42 system%s
+D s-atocou.ads		20230707070819 b45c2d8d system.atomic_counters%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-memory.ads		20230707070819 597d6634 system.memory%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stalib.adb		20230707070819 f2fe2716 system.standard_library%b
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
+D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [crear_banco banco 11 13 none]
+G c Z s b [agregar_cuenta banco 12 14 none]
+G c Z s b [transferir banco 13 14 none]
+G c Z s b [consultar_cuenta banco 14 13 none]
+G c Z s b [consultar_saldo_banco banco 15 13 none]
+G c Z s s [Tlista_cuentasBIP banco 21 4 none]
+G c Z s s [Tlista_cuentasBDI banco 21 4 none]
+G c Z s s [Tlista_cuentasBDA banco 21 4 none]
+G c Z s s [Tlista_cuentasBDF banco 21 4 none]
+G c Z s s [banco_tipoDI banco 23 9 none]
+G c Z s s [banco_tipoDA banco 23 9 none]
+G c Z s s [banco_tipoDF banco 23 9 none]
+G c Z s s [banco_tipoIP banco 23 9 none]
+G r s cuenta_bancaria [crear_banco banco 11 13 none] [cuenta_bancariaIP cuenta 18 9 none]
+G r l cuenta_bancaria [crear_banco banco 11 13 none] [cuenta_bancariaDI cuenta 18 9 none]
+G r k cuenta_bancaria [crear_banco banco 11 13 none] [cuenta_bancariaDF cuenta 18 9 none]
+G r j cuenta_bancaria [crear_banco banco 11 13 none] [cuenta_bancariaDA cuenta 18 9 none]
+G r k cuenta_bancaria [agregar_cuenta banco 12 14 none] [cuenta_bancariaDF cuenta 18 9 none]
+G r j cuenta_bancaria [agregar_cuenta banco 12 14 none] [cuenta_bancariaDA cuenta 18 9 none]
+G r c none [transferir banco 13 14 none] [consultar_titular cuenta 15 13 none]
+G r c none [transferir banco 13 14 none] [consultar_saldo cuenta 14 13 none]
+G r c none [transferir banco 13 14 none] [retirar cuenta 13 14 none]
+G r c none [transferir banco 13 14 none] [depositar cuenta 12 14 none]
+G r c none [consultar_cuenta banco 14 13 none] [consultar_titular cuenta 15 13 none]
+G r j cuenta_bancaria [consultar_cuenta banco 14 13 none] [cuenta_bancariaDA cuenta 18 9 none]
+G r c none [consultar_saldo_banco banco 15 13 none] [consultar_saldo cuenta 14 13 none]
+G r s cuenta_bancaria [Tlista_cuentasBIP banco 21 4 none] [cuenta_bancariaIP cuenta 18 9 none]
+G r l cuenta_bancaria [Tlista_cuentasBDI banco 21 4 none] [cuenta_bancariaDI cuenta 18 9 none]
+G r k cuenta_bancaria [Tlista_cuentasBDI banco 21 4 none] [cuenta_bancariaDF cuenta 18 9 none]
+G r j cuenta_bancaria [Tlista_cuentasBDA banco 21 4 none] [cuenta_bancariaDA cuenta 18 9 none]
+G r k cuenta_bancaria [Tlista_cuentasBDF banco 21 4 none] [cuenta_bancariaDF cuenta 18 9 none]
+G r j cuenta_bancaria [banco_tipoDA banco 23 9 none] [cuenta_bancariaDA cuenta 18 9 none]
+G r k cuenta_bancaria [banco_tipoDF banco 23 9 none] [cuenta_bancariaDF cuenta 18 9 none]
+G r s cuenta_bancaria [banco_tipoIP banco 23 9 none] [cuenta_bancariaIP cuenta 18 9 none]
+G r l cuenta_bancaria [banco_tipoIP banco 23 9 none] [cuenta_bancariaDI cuenta 18 9 none]
+G r k cuenta_bancaria [banco_tipoIP banco 23 9 none] [cuenta_bancariaDF cuenta 18 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|2r6 4r5 13|2r6 4r5
+X 7 a-string.ads
+16K13*Strings 35e16 12|2r10 4r9 13|2r10 4r9
+X 9 a-strunb.ads
+82K21*Unbounded 756e26 12|2w18 4r17 13|2w18 4r17
+87R9*Unbounded_String<5|43R9> 739e14 12|13r66 14r56 13|31r66 59r56
+116V13*To_String{string} 13|36s13 36s65 38s16 38s68 63s13 63s65
+X 12 banco.ads
+8K9*Banco 18E4 27l5 27e10 13|8b14 83l5 83t10
+9R9*Banco_Tipo 11r32 12r40 13r36 14r34 15r39 23c9 26e14 13|11r32 12r11 18r40
+. 31r36 59r34 73r39
+11V13*Crear_Banco{9R9} 13|11b13 15l8 15t19
+12U14*Agregar_Cuenta 12=29 12>52 13|18b14 28l8 28t22
+12r29 B{9R9} 13|18b29 21r10 22m10 22r21 23m10 23r20
+12r52 C{14|9R9} 13|18b52 23r32
+13U14*Transferir 13=25 13>48 13>56 13>84 13|31b14 56l8 56t18
+13r25 B{9R9} 13|31b25 35r21 36r48 38r51 49r33 54m22 54r22 55m24 55r24
+13r48 Origen{9|87R9} 13|31b48 36r75
+13r56 Destino{9|87R9} 13|31b56 38r78
+13f84 Cant{float} 13|31b84 49r56 54r43 55r43
+14V13*Consultar_Cuenta{14|9R9} 14>30 14>46 13|59b13 70l8 70t24
+14r30 B{9R9} 13|59b30 62r21 63r48 64r20
+14r46 Titular{9|87R9} 13|59b46 63r75
+15V13*Consultar_Saldo_Banco{float} 15>35 13|73b13 81l8 81t29
+15r35 B{9R9} 13|73b35 77r21 78r50
+18i4 Max_Cuentas{integer} 19r48 13|21r20
+19I12 Indice_Cuenta{integer} 21r33
+21A9 Lista_Cuentas(14|9R9)<integer> 24r17
+24a7*Cuentas{21A9} 13|23m12 36r50 38r53 49r35 54m24 55m26 63r50 64r22 78r52
+25i7*Total{integer} 13|21r12 22m12 22r23 23r22 35r23 62r23 77r23
+X 13 banco.adb
+12r7 B{12|9R9} 14r14
+32i7 I_origen{integer} 37m13 44r10 49r43 54r32
+32i17 I_dest{integer} 39m13 44r26 55r34
+35i11 I{integer} 36r58 37r25 38r61 39r23
+62i11 I{integer} 63r58 64r30
+74f7 Total{float} 78m10 78r19 80r14
+77i11 I{integer} 78r60
+X 14 cuenta.ads
+7K9*Cuenta 12|3w6 5r5 13|3w6 5r5 36r23 38r26 49r10 54r7 55r7 63r23 78r27
+. 14|23e11
+9R9*Cuenta_Bancaria 12|12r56 14r81 21r51 13|18r56 59r81 14|21e14
+12U14*Depositar 13|55s14
+13U14*Retirar 13|54s14
+14V13*Consultar_Saldo{float} 13|49s17 78s34
+15V13*Consultar_Titular{9|87R9} 13|36s30 38s33 63s30
+X 15 system.ads
+67M9*Address
+X 20 s-memory.ads
+53V13*Alloc{15|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{15|67M9} 105i<c,__gnat_realloc>22
+X 26 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

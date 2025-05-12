@@ -1,0 +1,27 @@
+node COUNTER(CLICK,CLOCK:bool) returns(VAL:int; ENABLE:bool);
+var 
+	COUNTDOWN:int;
+	RESET:bool;
+let
+	COUNTDOWN = 2 -> if pre(COUNTDOWN)>0 then pre(COUNTDOWN)-1 else 2;
+	RESET = if pre(COUNTDOWN) = 0 then true else false;
+	
+	VAL = 0 -> if RESET=false then (if CLICK then (1 + pre(VAL)) else pre(VAL)) else 0;
+	ENABLE = if COUNTDOWN = 0 then true else false;
+tel
+node EMISSION(VAL:int; ENABLE:bool) returns(SINGLE,DOUBLE:bool);
+let
+	SINGLE = (VAL=1) and ENABLE;
+	DOUBLE = (VAL>1) and ENABLE;
+tel
+	
+
+node MOUSE(CLICK,CLOCK:bool) returns(SINGLE,DOUBLE:bool);
+
+var
+	VAL:int;
+	ENABLE:bool;
+let
+	VAL, ENABLE = COUNTER(CLICK,CLOCK);
+	SINGLE, DOUBLE = EMISSION(VAL, ENABLE);
+tel

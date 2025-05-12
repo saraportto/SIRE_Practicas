@@ -1,0 +1,78 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U miniagenda%b		miniagenda.adb		009a0504 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D miniagenda.adb	20250411165307 582559cd miniagenda%b
+D system.ads		20230707070819 77e65b42 system%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [miniagenda standard 4 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 1r23 2r6 2r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|2w10 2r35
+X 7 a-textio.ads
+57K13*Text_IO 727e16 12|1w10 1r27
+273U14*Skip_Line 12|85s7
+454U14*Get 12|21s10 23s10 25s10 40s7
+465U14*Put 12|83s7
+508U14*Put_Line 12|20s10 22s10 24s10 29s10 31s10 39s7 44s13 45s13 46s13 47s13
+. 48s13 49s13 55s10 62s10 65s13 66s13 67s13 68s13 69s13 70s13 78s7 79s7 80s7
+. 81s7 82s7 92s13 95s13
+X 8 a-tiinio.ads
+59U14*Get 12|84s7[3|18]
+X 12 miniagenda.adb
+4U11*MiniAgenda 4b11 98l5 98t15
+6R9 Contacto 10e14 12r36 17r24
+7a7 Nombre{string} 21m29 43r32 46r54 67r54
+8a7 Telefono{string} 23m29 47r57 68r57
+9a7 Email{string} 25m29 48r53 69r53
+12A9 Agenda(6R9)<integer> 13r22
+13a4 Lista_Contactos{12A9} 28m10 43r13 46r35 47r38 48r34 67r35 68r38 69r34
+14i4 Total_Contactos{integer} 19r10 27m10 27r29 28r26 42r21 61r10 64r24
+16U14 Anadir_Contacto 16b14 33l8 33t23 88s20
+17r7 Nuevo_Contacto{6R9} 21m14 21r14 23m14 23r14 25m14 25r14 28r46
+35U14 Buscar_Contacto 35b14 57l8 57t23 89s20
+36a7 Nombre_Buscar{string} 40m11 43r41
+37b7 Encontrado{boolean} 50m13 54r14
+42i11 I{integer} 43r29 46r51 47r54 48r50
+59U14 Mostrar_Contactos 59b14 73l8 73t25 90s20
+64i14 I{integer} 66r50 67r51 68r54 69r50
+75i4 Opcion{integer} 84m11 87r12
+

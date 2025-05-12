@@ -1,0 +1,77 @@
+type sensorTemp = struct{id: int; temperatura: real};
+function sensor(i: int; temp: real) returns (out: sensorTemp);
+let
+        out.id=i;
+        out.temperatura=temp;
+tel;
+
+type array_sensores=sensorTemp^3;
+function inicializar() returns (array: array_sensores);
+let
+        array = [
+        sensor(1, 25.0),
+        sensor(2, 30.5),
+        sensor(3, 28.3)
+        ];
+tel;
+
+function extraer_temperatura(sensor: sensorTemp) returns (temp: real);
+let
+        temp = sensor.temperatura;
+tel;
+
+function temperatura_media1(array: array_sensores) returns (media: real);
+var
+        suma: real;
+let
+        suma = array[0].temperatura + array[1].temperatura +
+        array[2].temperatura;
+        media = suma / 3.0;
+tel;
+
+function temperatura_media2(array: array_sensores) returns (media: real);
+var
+        suma: real;
+        a: real^3;
+let
+        -- Extrae las temperaturas del array de sensores
+        a = map<<extraer_temperatura,3>>(array);
+        suma = red<<+,3>>(0.0, a);
+        media = suma / 3.0;
+tel;
+
+function suma_sensorTemp(acc:real;sensor: sensorTemp) returns (accR: real);
+let
+        accR = acc + sensor.temperatura;
+tel;
+
+function suma_sensorTemp2(acc:real;sensor: sensorTemp) returns (accR: real; array2: sensorTemp);
+let
+        accR = acc + sensor.temperatura;
+	array2 = sensor;
+tel;
+
+
+function temperatura_media3(array: array_sensores) returns (media: real);
+var
+        suma: real;
+	array2: array_sensores;
+let
+        (suma, array2) = fillred<<suma_sensorTemp2,3>>(0.0, array);
+        media = suma / 3.0;
+tel;
+
+
+
+node main() returns (media1, media2, media3:real);
+var
+        array: array_sensores;
+let
+        array=inicializar();
+        media1=temperatura_media1(array);
+        media2=temperatura_media2(array);
+	media3=temperatura_media3(array);
+
+tel;
+
+

@@ -1,0 +1,65 @@
+type tipo_temperatura= real;
+type tipo_presion = real;
+type act=enum{ACTIVADO,NOACTIVADO};
+
+node generar_relojes(c: int) returns (clk_rapido: bool; clk_lento: bool);
+let
+	clk_rapido = false->(c mod 2 = 0); -- Activo cada 2 ciclos
+	clk_lento = false->(c mod 4 = 0); -- Activo cada 4 ciclos
+tel;
+
+node filtrar_temperatura(clk_rapido: bool; temp: tipo_temperatura)
+returns (temp_filtrada: real when clk_rapido);
+let
+	-- Filtramos la temperatura solo cuando clk_rapido est´e activo
+	temp_filtrada=temp when clk_rapido;
+tel;
+
+node filtrar_presion(clk_rapido: bool; temp: tipo_presion)
+returns (presion_filtrada: real when clk_rapido);
+let
+	-- Filtramos la temperatura solo cuando clk_rapido est´e activo
+	presion_filtrada=temp when clk_rapido;
+tel;
+
+node activar_alarma(clk_rapido: bool; clk_lento: bool;
+temp: tipo_temperatura when clk_rapido; pres: tipo_presion when clk_rapido)
+returns (alarma: act;temp_sincronizada:tipo_temperatura when
+clk_lento;  presion_sincronizada: tipo_presion when clk_lento; clock:bool);
+var
+	clock_lento, clock_rapido, cond:bool;
+let
+	-- Sincronizamos la temperatura en base al reloj lento
+	temp_sincronizada = current(temp) when clk_lento;
+	presion_sincronizada = current(pres) when clk_lento;
+	-- La alarma se activa si ambos relojes est´an activos y la
+	-- temperatura sincronizada es mayor a 28
+	clock_lento = merge clk_lento (true->(temp_sincronizada-(0.0->pre(temp_sincronizada)))>10.0 or (presion_sincronizada - (0.0->pre(presion_sincronizada)))>104.0)
+	(false->false);
+	clock_rapido = merge clk_rapido (true->true) (false->false);
+	cond=clock_rapido and clock_lento;
+	clock= merge cond (true->true) (false->false);
+	alarma=if clock then ACTIVADO else NOACTIVADO;
+tel;
+
+node main(temp: tipo_temperatura; pres: tipo_presion) returns (clk_lento, clk_rapido:bool;alarma_final: act;
+temp_filtrada:tipo_temperatura when clk_rapido;
+temp_sincronizada:tipo_temperatura when clk_lento; presion_filtrada: tipo_presion when clk_rapido; presion_sincronizada: tipo_presion when clk_lento;
+clock:bool);
+var
+	c: int; -- Contador global para generar relojes
+	alarma: act;
+let
+	-- Inicializamos el contador
+	c = 0 -> pre(c) + 1;
+	-- Generamos los relojes
+	(clk_rapido, clk_lento) = generar_relojes(c);
+	-- Filtramos la temperatura con el reloj r´apido
+	temp_filtrada = filtrar_temperatura(clk_rapido, temp);
+	presion_filtrada = filtrar_presion(clk_rapido, pres);
+	-- Activamos la alarma con la temperatura filtrada y los relojes
+	(alarma,temp_sincronizada,  presion_sincronizada,clock) = activar_alarma(clk_rapido,
+	clk_lento, temp_filtrada, presion_filtrada);
+	-- El resultado final es el estado de la alarma
+	alarma_final = alarma;
+tel;

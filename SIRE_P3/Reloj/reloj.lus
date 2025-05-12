@@ -1,0 +1,14 @@
+node reloj(hora_signal, minuto_signal, segundo_signal: bool; nueva_hora, nuevo_minuto, nuevo_segundo: int)
+returns (tiempo_transcurrido: int);
+
+var hora, minuto, segundo: int;
+
+let
+
+hora = if hora_signal then nueva_hora else 12;
+minuto = if minuto_signal then nuevo_minuto else 0;
+segundo = if segundo_signal then nuevo_segundo else 0;
+
+tiempo_transcurrido = if hora >= 12 then (hora - 12)*3600 + minuto*60 + segundo else (hora + 12)*3600 + minuto*60 + segundo;
+
+tel

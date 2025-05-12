@@ -1,0 +1,236 @@
+V "GNAT Lib v10"
+M P W=b
+P SS ZX
+
+RN
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_RELATIVE_DELAY
+RV NO_SECONDARY_STACK
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_TERMINATE_ALTERNATIVES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=2
+RV MAX_TASK_ENTRIES=1
+RV MAX_TASKS=1+
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U robot%b		Robot.adb		ca00bba4 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-calend.ads		20230707070819 474d9720 ada.calendar%s
+D a-caldel.ads		20230707070819 9f20b83d ada.calendar.delays%s
+D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
+D a-chlat1.ads		20230707070819 66457d31 ada.characters.latin_1%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20230707070818 0240fc73 ada.real_time%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-string.ads		20230707070819 90ac6797 ada.strings%s
+D a-strmap.ads		20230707070819 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20230707070819 1656705b ada.strings.unbounded%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D Robot.adb		20250512185538 72a21e92 robot%b
+D system.ads		20230707070819 77e65b42 system%s
+D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
+D s-atocou.ads		20230707070819 b45c2d8d system.atomic_counters%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20230707070819 0b705ca5 system.concat_3%s
+D s-conca4.ads		20230707070819 7e642b20 system.concat_4%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-imgboo.ads		20230707070819 f5d971eb system.img_bool%s
+D s-imenne.ads		20230707070819 614c06c0 system.img_enum_new%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-imgrea.ads		20230707070819 c7a851e2 system.img_real%s
+D s-linux.ads		20230707070818 ed0b8aee system.linux%s
+D s-memory.ads		20230707070819 597d6634 system.memory%s
+D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20230708061938 fc2966ab system.os_constants%s
+D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stalib.adb		20230707070819 f2fe2716 system.standard_library%b
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
+D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
+D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
+D s-taprop.ads		20230707070818 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
+D s-taprob.ads		20230707070818 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20230707070819 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20230707070818 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20230707070818 cca55c94 system.tasking.stages%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [robot standard 5 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 20|1r6 1r23 2r6 2r33
+X 11 a-string.ads
+16K13*Strings 35e16 20|2r10 2r37
+X 13 a-strunb.ads
+82K21*Unbounded 756e26 20|2w18 2r45
+87R9*Unbounded_String<7|43R9> 739e14 20|24r19
+103V13*To_Unbounded_String{87R9} 20|40s48 72s29 192s48 197s40 202s44 206s44
+. 210s44 214s44 218s44
+116V13*To_String{string} 20|408s44
+X 15 a-textio.ads
+57K13*Text_IO 727e16 20|1w10 1r27
+508U14*Put_Line 20|253s16 272s16 291s16 312s16 333s16 381s10 382s10 383s10
+. 384s10 385s10 386s10 387s10 388s10 389s10 390s10 394s10 396s13
+X 20 Robot.adb
+5U11*Robot 5b11 436l5 436t10
+10R9 Estado_Tipo 16e14 154r37 161r44 188r57 196r64 349r18
+11b7 Hay_Obstaculo{boolean} 166r26 205r35 384r59
+12b7 Camino_Libre{boolean} 169r26 209r35 385r61
+13b7 Bateria_Baja{boolean} 163r26 201r35 209r63 368m20 370m20 386r62
+14b7 Enemigo_Detectado{boolean} 172r26 213r35 387r66
+15b7 Cargador_Vacio{boolean} 175r26 217r35 375m20 377m20 388r64
+19E9 Meta_Tipo 19e97 20r42 396r60
+19n23 Evitar_Obstaculo{19E9} 167r31 204r27
+19n41 Moverse{19E9} 170r31 208r27
+19n50 Cargar_Bateria{19E9} 164r31 200r27
+19n66 Eliminar{19E9} 173r31 212r27
+19n76 Cargar_Arma{19E9} 176r31 216r27
+19n89 Ninguna{19E9} 162r26 162r35 162r44 162r53 162r62
+20A9 Metas_Array(19E9)<integer> 154r62 161r69 188r32 196r39 350r18
+23R9 Accion_Tupla 26e14 29r45 54r17
+24r7 Nombre{13|87R9} 408r66
+25i7 Prioridad{integer} 58r27 58r47
+29A9 Acciones_Array(23R9)<integer> 36r39 37r40 40r18 46r39 52r40 53r17 192r18
+. 351r18
+35W19 Acciones_Protegidas 40E7 41l8 41e27 43b19 76l8 76t27 187r48 234r21
+36U17 Guardar 36>25 46b17 49l11 49t18 224s24
+36a25 Acciones{29A9} 46b25 48r22
+37U17 Obtener 37<25 52b17 66l11 66t18 404s14
+37a25 Acciones{29A9} 52b25 65m10
+38U17 Resetear 69b17 74l11 74t19 426s14
+40a7 Internas{29A9} 48r10 53r35 71r19 72r13
+53a10 Temp{29A9} 56r19 56r33 57r31 58r19 58r39 59r26 60m19 60r30 61m19 65r22
+54r10 Tmp{23R9} 59m19 59r19 61r30
+56i14 I{integer} 57r22 58r44 59r31 60r24
+57i17 J{integer} 58r24 60r35 61r24
+71i14 I{integer} 72r22
+80W19 Bateria_Segura 85E7 86l8 86e22 88b19 114l8 114t22 235r22
+81U17 Descargar 81>27 91b17 97l11 97t20 429s18
+81f27 Porcentaje{float} 91b27 93r27
+82U17 Cargar 82>24 100b17 106l11 106t17 293s24
+82f24 Porcentaje{float} 100b24 102r27
+83V16 Obtener{float} 109b16 112l11 112t18 367s21 389s56
+85f7 Nivel{float} 93r10 93r19 94r13 95r13 102r10 102r19 103r13 104r13 111r17
+118W19 Cargador_Arma 123E7 124l8 124e21 126b19 147l8 147t21 236r23
+119U17 Disparar 129b17 134l11 134t19 335s25
+120U17 Recargar 137b17 140l11 140t19 314s25
+121V16 Obtener{integer} 143b16 146l11 146t18 374s22 390s56
+123i7 Balas{integer} 131r13 132r13 132r22 139r10 145r17
+153T14 Planificador_Estrategico 155l8 155e32 157b14 183l8 183t32 237r13
+154Y13 Evaluar 154=21 154<50 161b20 178l17 178t24 393s13
+154r21 Estado{10R9} 163r19 166r19 169r19 172r19 175r19
+154a50 Metas{20A9} 162m16 162r16 164m19 164r19 167m19 167r19 170m19 170r19
+. 173m19 173r19 176m19 176r19
+161r28 Estado{10R9}
+161a57 Metas{20A9}
+187T14 Planificador_Tactico 187d35 189l8 189e28 191b14 230l8 230t28 238r13
+188Y13 Planear 188>21 188>45 196b20 225l17 225t24 400s13
+188a21 Metas{20A9} 198r25 199r24
+188r45 Estado{10R9} 201r28 205r28 209r28 209r56 213r28 217r28
+192a7 Acciones{29A9} 197m16 202m28 206m28 210m28 214m28 218m28 224r32
+196a28 Metas{20A9}
+196r52 Estado{10R9}
+198i20 I{integer} 199r30
+234w4 Acc{35W19} 238m34 238r34 404r10 426r10
+235w4 Bateria{80W19} 293r16 367r13 389r48 429r10
+236w4 Cargador{118W19} 314r16 335r16 374r13 390r47
+237t4 PE{153T14} 393r10
+238t4 PT{187T14} 400r10
+244t9 Avanzar 248b14 259l8 259t15 412r19
+245Y13 Ejecutar 252b20 254l17 254t25 412s27
+263t9 Girar 267b14 278l8 278t13 414r19
+264Y13 Ejecutar 271b20 273l17 273t25 414s25
+282t9 Cargar 286b14 299l8 299t14 416r19
+283Y13 Ejecutar 290b20 294l17 294t25 416s26
+303t9 Recargar 307b14 320l8 320t16 420r19
+304Y13 Ejecutar 311b20 315l17 315t25 420s28
+324t9 Disparar 328b14 341l8 341t16 418r19
+325Y13 Ejecutar 332b20 336l17 336t25 418s28
+347t9 Robot 348b14 432l8 432t13
+349r7 Estado{10R9} 359m26 360m26 361m26 362m31 368m13 370m13 375m13 377m13
+. 384r52 385r54 386r55 387r59 388r57 393m21 393r21 400r28
+350a7 Metas{20A9} 393m29 395r19 396r76 400r21
+351a7 Acciones{29A9} 404m22 406r19 408r54
+354i11 I{integer} 356r28
+356i13 V{integer} 358r18
+395i14 I{integer} 396r48 396r82
+406i14 I{integer} 408r63
+408a16 Nombre{string} 410r26 411r19 413r22 415r22 417r22 419r22
+X 21 system.ads
+67M9*Address
+X 37 s-memory.ads
+53V13*Alloc{21|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{21|67M9} 105i<c,__gnat_realloc>22
+X 45 s-stausa.ads
+208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
+273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+X 47 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+
